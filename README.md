@@ -1,0 +1,14 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+    int n,m,k,lish=0,rul=0;
+    cin>>n>>m>>k;
+    while(m != 0){
+        m-=k/n;
+        lish=k%n;
+        rul++;
+    }
+    cout<<rul<<" "<<lish;
+    
+}
